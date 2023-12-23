@@ -1,7 +1,13 @@
 {%load static%}
-<a href="{%url 'index'%}"><i class="fa fa-fw fa-home"></i> Home</a>
-<a href="{%url 'about'%}"><i class="fa-regular fa-user"></i> About</a>
-<a href="{%url 'projects'%}"><i class="fa-solid fa-laptop-code"></i> Projects</a>
-<a href="{%url 'contact'%}"><i class="fa-regular fa-envelope"></i> Contact</a>
-<!--Line this up in css-->
+
+
+
+<div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="{%url 'index'%}"><i class="fa fa-fw fa-home"></i> Home</a>
+    <a href="{%url 'about'%}"><i class="fa-regular fa-user"></i> About</a>
+    <a href="{%url 'projects'%}"><i class="fa-solid fa-laptop-code"></i> Projects</a>
+    <a href="{%url 'contact'%}"><i class="fa-regular fa-envelope"></i> Contact</a>
+</div>
+<span onclick="openNav()"><i class="fa-solid fa-bars"></i></span>
 

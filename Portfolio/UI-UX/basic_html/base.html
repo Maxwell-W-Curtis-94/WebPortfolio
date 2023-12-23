@@ -6,6 +6,7 @@
     {%block stylesheets%}
     <link href="{% static 'css/main.css'%}" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="{% static 'javascript/sidebar.js' %}"></script>
     <script src="https://kit.fontawesome.com/2184241f23.js" crossorigin="anonymous"></script>
     {%endblock stylesheets%}
     <title>Portfolio</title>
@@ -14,7 +15,7 @@
 <div id="header_content">
     {%include 'basic_html/header.html'%}
 </div>
-<div class="content" id="main_content">
+<div class="content" id="main">
     {%block content%}
     {%endblock content%}
 </div>
